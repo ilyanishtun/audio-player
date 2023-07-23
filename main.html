@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Library</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,31 +13,68 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="logo"><h1 class="logo-name">Brooklyn Public Library</h1></div>
-    <nav class="nav">
-      <ul class="menu">
-        <li class="menu-item"><a href="#">About</a></li>
-        <li class="menu-item"><a href="#">Favorites</a></li>
-        <li class="menu-item"><a href="#">Coffee shop</a></li>
-        <li class="menu-item"><a href="#">Contacts</a></li>
-        <li class="menu-item"><a href="#">Library Card</a></li>
-        <li class="menu-item"><img class="icon-profile" src="./assets/img/icon_profile.svg" alt="icon-profile"></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="welcome">
-      <h3>Welcome to the brooklyn library</h3>
-    </section>
-    <section class="about"></section>
-    <section class="favorites"></section>
-    <section class="coffeeShop"></section>
-    <section class="contacts"></section>
-    <section class="libraryCard"></section>
-  </main>
-  <footer></footer>
-  
+  <div class="wrapper-black">
+    <div class="container">
+      <header class="header">
+        <div class="logo"><h1 class="logo-name">Brooklyn Public Library</h1></div>
+        <div class="header-right">
+          <nav class="nav">
+            <ul class="menu">
+              <li class="menu-item"><a href="#">About</a></li>
+              <li class="menu-item"><a href="#">Favorites</a></li>
+              <li class="menu-item"><a href="#">Coffee shop</a></li>
+              <li class="menu-item"><a href="#">Contacts</a></li>
+              <li class="menu-item"><a href="#">Library Card</a></li>
+            </ul>
+          </nav>
+          <div class="icon-profile"><img src="./assets/img/icon_profile.svg" alt="icon-profile"></div>
+        </div>
+      </header>
+    </div>
+  </div>
+    <main>
+      <div class="wrapper-welcome">
+        <div class="welcome-gradient">
+          <div class="container">
+            <section class="welcome">
+              <div class="welcome-box">
+                <h3 class="welcome-text">Welcome&nbsp; <br> to the brooklyn <br> library</h3>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <section class="about">
+          <h2 class="title">About</h2>
+          <div class="line"></div>
+          <p class="about-description">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
+          <div class="slider">
+            <div class="slider-photo">
+              <div class="slider-item"><img src="./assets/img/slider/slider1.png" srcset="./assets/img/slider/slider1_2x.png 2x" alt="slider1"></div>
+              <div class="slider-item"><img src="./assets/img/slider/slider2.png" srcset="./assets/img/slider/slider2_2x.png 2x" alt="slider2"></div>
+              <div class="slider-item"><img src="./assets/img/slider/slider3.png" srcset="./assets/img/slider/slider3_2x.png 2x" alt="slider3"></div>
+            </div>
+            <div class="slider-controls">
+              <div class="slider-click">
+                <div class="control control-checked"></div>
+              </div>
+              <div class="slider-click">
+                <div class="control"></div>
+              </div>
+              <div class="slider-click">
+                <div class="control"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="favorites"></section>
+      <section class="coffeeShop"></section>
+      <section class="contacts"></section>
+      <section class="libraryCard"></section>
+    </main>
+    <footer></footer>
 </body>
 </html>
 

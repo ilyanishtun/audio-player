@@ -34,15 +34,20 @@ a {
 
 
 .wrapper-black {
-  background-color: #0C0C0E;
+  background-color: #ffffff;
   margin: 0 auto;
 }
 
 .wrapper-welcome {
-  background-image: url(./assets/img/main_bg.jpeg);
+  /* background-image: url(./assets/img/main_bg.jpeg); */
   background-position: center;
   background-size: cover;
 
+}
+.welcome {
+  background-image: url(./assets/img/main_bg.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -92,6 +97,12 @@ a {
   font-weight: 400;
   line-height: 50px; /* 250% */
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: #BB945F;
+  font-weight: 500;
 }
 
 
@@ -102,6 +113,7 @@ a {
 
 .welcome-box {
   padding: 220px 840px 160px 0;
+  background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 50%);
 }
 
 .welcome-text {
@@ -121,6 +133,8 @@ a {
 
 
 .welcome-gradient {
+  width: 1440px;
+  margin: 0 auto;
   background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 50%);
 }
 
@@ -227,6 +241,11 @@ a {
   padding-bottom: 40px;
 }
 
+.form {
+  display: flex;
+  gap: 85px;
+}
+
 .item {
   color: #000;
   font-family: Inter;
@@ -234,8 +253,22 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-right: 85px;
+  padding-right: 5px;
   padding-left: 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.radio-button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .checked {
@@ -249,6 +282,10 @@ a {
   width: 15px;
   height: 15px;
   margin: 0;
+  cursor: pointer;
+  /* padding-left: 5px; */
+  justify-content: center;
+  align-items: center;
 }
 
 .radio-text {
@@ -286,6 +323,10 @@ a {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.no-book {
+  display: none;
 }
 
 .book-header {
@@ -358,7 +399,15 @@ a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 
+}
+
+.bottom-buy:hover {
+  border-radius: 2px;
+  border: 1px solid #BB945F;
+  background: #BB945F;
 }
 
 .bottom-own {
@@ -378,6 +427,10 @@ a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
+}
+
+.bottom-own:hover {
+  color: #000;
 }
 
 .book-icon {
@@ -715,7 +768,7 @@ a {
 }
 
 .footer {
-  background: #0C0C0E;
+  background: #ffffff;
 }
 
 .adress-text {
@@ -735,6 +788,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #0C0C0E;
 }
 
 .footer-line {
@@ -746,9 +800,10 @@ a {
   text-align: right;
 }
 
-.social-icons {
+.social-icons ul {
   display: flex;
   gap: 15px;
+  padding-top: 9px;
 }
 
 .footer-hr {
@@ -771,4 +826,5 @@ a {
   letter-spacing: 2px;
   padding-top: 15px;
   gap: 570px;
+  padding-bottom: 20px;
 }

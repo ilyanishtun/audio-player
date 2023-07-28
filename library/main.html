@@ -20,11 +20,11 @@
         <div class="header-right">
           <nav class="nav">
             <ul class="menu">
-              <li class="menu-item"><a href="#">About</a></li>
-              <li class="menu-item"><a href="#">Favorites</a></li>
-              <li class="menu-item"><a href="#">Coffee shop</a></li>
-              <li class="menu-item"><a href="#">Contacts</a></li>
-              <li class="menu-item"><a href="#">Library Card</a></li>
+              <li class="menu-item"><a href="#about">About</a></li>
+              <li class="menu-item"><a href="#favorites">Favorites</a></li>
+              <li class="menu-item"><a href="#coffee">Coffee shop</a></li>
+              <li class="menu-item"><a href="#contacts">Contacts</a></li>
+              <li class="menu-item"><a href="#card">Library Card</a></li>
             </ul>
           </nav>
           <div class="icon-profile"><img src="./assets/img/icon_profile.svg" alt="icon-profile"></div>
@@ -45,8 +45,8 @@
         </div>
       </div>
       <div class="container">
-        <section class="about">
-          <h2 class="title">About</h2>
+        <section id="about" class="about">
+          <h2  class="title">About</h2>
           <div class="line"></div>
           <p class="about-description">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
           <div class="slider">
@@ -68,29 +68,37 @@
             </div>
           </div>
         </section>
-        <section class="favorites">
+        <section id="favorites" class="favorites">
           <h2 class="title title-favorites">Favorites</h2>
           <div class="line line-favorites"></div>
           <p class="favorites-pick">Pick favorites of season</p>
           
-          <form>
+          <form class="form">
             <label class="item">
-              <input class="radio" type="radio" name="books" checked>
+              <div class="radio-button">
+                <input class="radio" type="radio" name="books" checked>
+              </div>
               <span class="radio-text">Winter</span>
             </label>
           
             <label class="item">
-              <input class="radio" type="radio" name="books">
+              <div class="radio-button">
+                <input class="radio" type="radio" name="books">
+              </div>
               <span class="radio-text">Spring</span>
             </label>
 
             <label class="item">
-              <input class="radio" type="radio" name="books">
+              <div class="radio-button">
+                <input class="radio" type="radio" name="books">
+              </div>
               <span class="radio-text">Summer</span>
             </label>
 
             <label class="item">
-              <input class="radio" type="radio" name="books">
+              <div class="radio-button">
+                <input class="radio" type="radio" name="books">
+              </div>
               <span class="radio-text">Autumn</span>
             </label>
           </form>
@@ -132,7 +140,6 @@
                   <p class="">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
                   <img class="book-icon" src="./assets/img/books/book3.png" srcset="./assets/img/books/book3_2x.png 2x" alt="book3">
                 </div>
-                <img class="book-icon" src="" alt="">
                 <button class="bottom-buy">Buy</button>
               </div>
               
@@ -149,9 +156,163 @@
                 </div>
                 <button class="bottom-buy bottom-own">Own</button>
               </div>
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">The Body</h4>
+                <h5 class="book-author">By Stephen King</h5>
+                <div class="book-description">
+                  <p class="">Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.</p>
+                  <img class="book-icon" src="./assets/img/books/book5.png" srcset="./assets/img/books/book5_2x.png 2x" alt="book5">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Carry: A Memoir of Survival on Stolen Land</h4>
+                <h5 class="book-author">By Toni Jenson</h5>
+                <div class="book-description">
+                  <p class="">This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.</p>
+                  <img class="book-icon" src="./assets/img/books/book6.png" srcset="./assets/img/books/book6_2x.png 2x" alt="book6">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Days of Distraction</h4>
+                <h5 class="book-author">By Alexandra Chang</h5>
+                <div class="book-description">
+                  <p class="">A sardonic view of Silicon Valley culture, a meditation on race, and a journal of displacement and belonging, all in one form-defying package of spare prose.</p>
+                  <img class="book-icon" src="./assets/img/books/book7.png" srcset="./assets/img/books/book7_2x.png 2x" alt="book7">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Dominicana</h4>
+                <h5 class="book-author">By Angie Cruz</h5>
+                <div class="book-description">
+                  <p class="">A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.</p>
+                  <img class="book-icon" src="./assets/img/books/book8.png" srcset="./assets/img/books/book8_2x.png 2x" alt="book8">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Crude: A Memoir</h4>
+                <h5 class="book-author">By Pablo Fajardo & ​​Sophie Tardy-Joubert</h5>
+                <div class="book-description">
+                  <p class="">Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people</p>
+                  <img class="book-icon" src="./assets/img/books/book9.png" srcset="./assets/img/books/book9_2x.png 2x" alt="book9">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div> 
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Let My People Go Surfing</h4>
+                <h5 class="book-author">By Yvon Chouinard</h5>
+                <div class="book-description">
+                  <p class="">Chouinard—climber, businessman, environmentalist—shares tales of courage and persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business Unusual.</p>
+                  <img class="book-icon" src="./assets/img/books/book10.png" srcset="./assets/img/books/book10_2x.png 2x" alt="book10">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">The Octopus Museum: Poems</h4>
+                <h5 class="book-author">By Brenda Shaughnessy</h5>
+                <div class="book-description">
+                  <p class="">This collection of bold and scathingly beautiful feminist poems imagines what comes after our current age of environmental destruction, racism, sexism, and divisive politics.</p>
+                  <img class="book-icon" src="./assets/img/books/book11.png" srcset="./assets/img/books/book11_2x.png 2x" alt="book11">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Shark Dialogues: A Novel</h4>
+                <h5 class="book-author">By Kiana Davenport</h5>
+                <div class="book-description">
+                  <p class="">An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.</p>
+                  <img class="book-icon" src="./assets/img/books/book12.png" srcset="./assets/img/books/book12_2x.png 2x" alt="book12">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+              
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Casual Conversation</h4>
+                <h5 class="book-author">By Renia White</h5>
+                <div class="book-description">
+                  <p class="">White's impressive debut collection takes readers through and beyond the concepts of conversation and the casual - both what we say to each other and what we don't, examining the possibilities around how we construct and communicate identity. </p>
+                  <img class="book-icon" src="./assets/img/books/book13.png" srcset="./assets/img/books/book13_2x.png 2x" alt="book13">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">The Great Fire</h4>
+                <h5 class="book-author">By Lou Ureneck</h5>
+                <div class="book-description">
+                  <p class="">The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide</p>
+                  <img class="book-icon" src="./assets/img/books/book14.png" srcset="./assets/img/books/book14_2x.png 2x" alt="book14">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Rickey: The Life and Legend</h4>
+                <h5 class="book-author">By Howard Bryant</h5>
+                <div class="book-description">
+                  <p class="">With the fall rolling around, one can't help but think of baseball's postseason coming up! And what better way to prepare for it than reading the biography of one of the game's all-time greatest performers, the Man of Steal, Rickey Henderson?</p>
+                  <img class="book-icon" src="./assets/img/books/book15.png" srcset="./assets/img/books/book15_2x.png 2x" alt="book15">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
+              <div class="book no-book">
+                <header class="book-header"><p>Staff Picks</p>
+                  <div class="book-line"></div>
+                </header>
+                <h4 class="book-name">Slug: And Other Stories</h4>
+                <h5 class="book-author">By Megan Milks</h5>
+                <div class="book-description">
+                  <p class="">Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.</p>
+                  <img class="book-icon" src="./assets/img/books/book16.png" srcset="./assets/img/books/book16_2x.png 2x" alt="book16">
+                </div>
+                <button class="bottom-buy">Buy</button>
+              </div>
           </div>
         </section>
-        <section class="coffee-shop">
+        <section id="coffee" class="coffee-shop">
           <h2 class="title">Coffee Shop</h2>
           <div class="line line-favorites"></div>
           <p class="coffee-description">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also you can try desserts from bakery.</p>
@@ -225,7 +386,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section id="contacts" class="contacts">
           <h2 class="title">Our Contacts</h2>
           <div class="line"></div>
           <div class="contacts-content">
@@ -242,7 +403,7 @@
             </div>
           </div>
         </section>
-        <section class="libraryCard">
+        <section id="card" class="libraryCard">
           <h2 class="title">Digital Library Cards</h2>
           <div class="line"></div>
           <div class="card-content">
@@ -279,9 +440,11 @@
         </div>
         <div class="footer-line">
           <div class="social-icons">
-            <img src="./assets/img/twitter.svg" alt="twitter">
-            <img src="./assets/img/inst.svg" alt="inst">
-            <img src="./assets/img/facebook.svg" alt="facebook">
+            <ul>
+              <li><a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./assets/img/twitter.svg" alt="twitter"></a></li>
+              <li><a href="https://www.instagram.com/britneyspears/"><img src="./assets/img/inst.svg" alt="inst"></a></li>
+              <li><a href="https://www.facebook.com/Cristiano/?locale=ru_RU"><img src="./assets/img/facebook.svg" alt="facebook"></a></li>
+            </ul>
           </div>
           <div class="sat-sun"><p class="adress-text schedule">Sat - Sun <br> 10:00 am - 06:00 pm</p></div>
         </div>

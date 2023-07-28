@@ -28,6 +28,7 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /* body {
@@ -104,7 +105,11 @@ a {
 
 .menu-item a:hover {
   color: #BB945F;
-  font-weight: 500;
+  
+}
+
+a:hover {
+  color: #BB945F;
 }
 
 

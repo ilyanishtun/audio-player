@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -26,6 +27,7 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* body {
@@ -404,7 +406,9 @@ a {
 
 }
 
-.bottom-buy:hover {
+.bottom-buy:hover,
+.button-check-card:hover,
+.card-right-button:hover {
   border-radius: 2px;
   border: 1px solid #BB945F;
   background: #BB945F;
@@ -429,9 +433,9 @@ a {
   letter-spacing: 1px;
 }
 
-.bottom-own:hover {
+/* .bottom-own:hover {
   color: #000;
-}
+} */
 
 .book-icon {
   position: absolute;
@@ -661,6 +665,8 @@ a {
   background-color: #FFF;
   border-radius: 2px;
   border: 1px solid #0C0C0E;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .card-right-button-text {
@@ -764,6 +770,8 @@ a {
   border-radius: 2px;
   border: 1px solid #0C0C0E;
   background-color: #FFF;
+  transition: all 0.3s ease;
+  cursor: pointer;
 
 }
 
@@ -827,4 +835,13 @@ a {
   padding-top: 15px;
   gap: 570px;
   padding-bottom: 20px;
+}
+
+
+.tel {
+  color: #000;
+}
+
+.adress {
+  color: #ffffff;
 }

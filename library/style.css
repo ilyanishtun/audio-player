@@ -6,8 +6,8 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  /* outline: 1px solid;
-  outline-color: tomato; */
+  outline: 1px solid;
+  outline-color: tomato;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -54,7 +54,7 @@ a {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .welcome-box {
-  padding: 220px 840px 160px 0;
+  padding: 220px 0 160px 0;
   background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 50%);
 }
 
@@ -135,12 +135,13 @@ a:hover {
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: #0C0C0E;
+  width: 600px;
   
 }
 
 
 .welcome-gradient {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 50%);
 }
@@ -469,7 +470,8 @@ a:hover {
 .coffee-menu {
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  /* gap: 100px; */
+  flex-wrap: wrap;
 }
 
 .menu-title {
@@ -524,7 +526,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 438px;
+  width: 538px;
+  padding-right: 100px;
 }
 
 .desserts-cakes {
@@ -559,6 +562,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   padding: 40px 20px 36px 20px;
+  flex-wrap: nowrap;
 }
 
 .contacts-title {
@@ -599,11 +603,14 @@ a:hover {
   line-height: 40px; /* 200% */
   letter-spacing: 2px;
   text-transform: capitalize;
+  flex-wrap: nowrap;
+
 
 }
 
 .contacts-left {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   gap: 20px;
 }
@@ -648,7 +655,7 @@ a:hover {
   font-weight: 400;
   line-height: 40px; /* 200% */
   letter-spacing: 0.4px;
-  width: 456px;
+  max-width: 456px;
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -796,7 +803,7 @@ a:hover {
 }
 
 .content-footer {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -821,7 +828,7 @@ a:hover {
 }
 
 .footer-hr {
-  width: 1400px;
+  max-width: 1400px;
   height: 1px;
   background: #FFF;
   margin-top: 20px;
@@ -850,4 +857,39 @@ a:hover {
 
 .adress {
   color: #ffffff;
+}
+
+.slider-click:nth-last-child(-n+2) {
+  display: none;
+}
+/* .slider-item:not(:nth-child(1)) {
+  display: none;
+} */
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  .slider-item:not(:nth-child(1)) {
+    display: none;
+  }
+  .slider-item:first-child {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .about-description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .slider-click:nth-last-child(-n+2) {
+    display: flex;
+  }
+
+  .desserts-cakes {
+    margin-left: auto;
+    padding-top: 40px;
+  }
+
 }

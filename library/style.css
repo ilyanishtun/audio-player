@@ -6,8 +6,8 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  /* outline: 1px solid;
-  outline-color: tomato; */
+  outline: 1px solid;
+  outline-color: tomato;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -187,10 +187,24 @@ a:hover {
   padding-bottom: 20px;
 }
 
-.slider-photo {
+.arrow-left,
+.arrow-right {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.slider-photo,
+.slider-items {
   display: flex;
   gap: 25px;
   padding: 0 20px;
+  justify-content: center;
+}
+
+.slider-items {
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0;
 }
 
 .slider-controls {
@@ -877,6 +891,18 @@ a:hover {
   .slider-item:not(:nth-child(1)) {
     display: none;
   }
+
+  .arrow-left,
+  .arrow-right {
+    display: block;
+    /* padding: 21px; */
+    margin: 21px;
+    margin-top: 289px;
+    max-height: 23px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
   .slider-item:first-child {
     justify-content: center;
     margin: 0 auto;

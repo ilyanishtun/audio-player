@@ -6,14 +6,18 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  outline: 1px solid;
-  outline-color: tomato;
+  /* outline: 1px solid;
+  outline-color: tomato; */
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+}
+
+body._lock {
+  overflow: hidden;
 }
 
 ol, ul {
@@ -116,6 +120,12 @@ a:hover {
 .icon-profile {
   display: flex;
   align-items: center;
+  z-index: 6;
+  width: 28px;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .welcome-box {
@@ -205,6 +215,7 @@ a:hover {
   justify-content: space-between;
   gap: 25px;
   padding: 0;
+  z-index: 2;
 }
 
 .slider-controls {
@@ -885,9 +896,106 @@ a:hover {
 } */
 
 @media screen and (max-width: 1000px) {
-  .menu {
-    display: none;
+  .header{
+    height: 90px;
+    /* padding-top: 30px;
+    padding-bottom: 20px; */
   }
+
+  .menu {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 332px;
+    height: 570px;
+    background:  #0C0C0E;
+    padding: 30px 30px 30px 30px;
+    transition: all 0.3s ease 0s;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0;
+    z-index: 5;
+  } 
+
+  .menu._active {
+    right: 0;
+    transform: translate(0px, 0px);
+  }
+
+  .menu:last-child {
+    margin-right: 0;
+  }
+
+  .menu-item {
+    justify-content: center;
+  }
+
+  .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    margin: auto;
+    /* transition: all 0.3s ease; */
+  }
+
+  .menu__icon span,
+  .menu__icon::before,
+  .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    /* transition: all 0.3s ease; */
+    background-color: #FFF;
+  }
+
+  .menu__icon span {
+    background: #FFF;
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+    transition: all 0.3s ease;
+    
+  }
+
+  .menu__icon::before,
+  .menu__icon::after {
+    content: "";
+  }
+
+  .menu__icon::before {
+    top: 0;
+    transition: all 0.3s ease;
+  }
+
+  .menu__icon::after {
+    bottom: 0;
+    transition: all 0.3s ease;
+  }
+  .header-right {
+    gap: 40px;
+  }
+
+  .menu__icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  } 
+  .menu__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu__icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+  }
+
+  .icon-profile {
+    /* align-self: flex-start; */
+  }
+
+
   .slider-item:not(:nth-child(1)) {
     display: none;
   }
@@ -975,5 +1083,7 @@ a:hover {
   .rs {
     padding-left: 10px;
   }
+
+  
 
 }

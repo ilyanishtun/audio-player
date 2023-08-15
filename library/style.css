@@ -928,7 +928,7 @@ a:hover {
   }
 
   .menu-item {
-    justify-content: center;
+    text-align: center;
   }
 
   .menu__icon {
@@ -1004,7 +1004,7 @@ a:hover {
   .arrow-right {
     display: block;
     /* padding: 21px; */
-    margin: 21px;
+    margin: 22px;
     margin-top: 289px;
     max-height: 23px;
     cursor: pointer;

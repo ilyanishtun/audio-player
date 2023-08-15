@@ -206,7 +206,7 @@ a:hover {
 .slider-photo,
 .slider-items {
   display: flex;
-  gap: 25px;
+  gap: 59px;
   padding: 0 20px;
   justify-content: center;
 }
@@ -1004,7 +1004,6 @@ a:hover {
   .arrow-right {
     display: block;
     /* padding: 21px; */
-    margin: 22px;
     margin-top: 289px;
     max-height: 23px;
     cursor: pointer;

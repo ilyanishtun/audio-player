@@ -6,8 +6,8 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  /* outline: 1px solid;
-  outline-color: tomato; */
+  outline: 1px solid;
+  outline-color: tomato;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -197,25 +197,47 @@ a:hover {
   padding-bottom: 20px;
 }
 
+.slider {
+  padding: 0 20px;
+}
+
 .arrow-left,
 .arrow-right {
   display: none;
   transition: all 0.3s ease;
 }
 
-.slider-photo,
-.slider-items {
+.slider-photo {
   display: flex;
+  /* justify-content: center; */
+  overflow: hidden;
+
+}
+
+/* .slider-photo,
+.slider-items {
   gap: 59px;
   padding: 0 20px;
-  justify-content: center;
+} */
+
+.img-slider {
+  max-width: 450px;
 }
 
 .slider-items {
-  justify-content: space-between;
+  display: flex;
+  max-width: 1400px;
+  /* justify-content: space-between; */
   gap: 25px;
   padding: 0;
   z-index: 2;
+  /* overflow: hidden; */
+  position: relative;
+  /* border: 1px solid tomato; */
+  /* justify-content: center; */
+  transition: all ease 0.5s;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 
 .slider-controls {

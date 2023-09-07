@@ -90,3 +90,95 @@ document.querySelector('.control5').addEventListener('click', function() { //п�
 function rollSlider() {
   sliderLine.style.transform = 'translate(-'+count*(475)+'px)';
 }
+
+function arrowActive() {
+  if (count >= 4) {
+    document.querySelector('.arrow-right').style.cursor = 'default';
+  } else if (count  < 1) {
+    document.querySelector('.arrow-left').style.cursor = 'default';
+  } else {
+    document.querySelector('.arrow-right').style.cursor = 'pointer';
+    document.querySelector('.arrow-left').style.cursor = 'pointer';
+  }
+}
+
+
+document.querySelector('.arrow-right').addEventListener('click', function() { //стрелка вправо
+  if (count === 0) {
+    document.getElementById('2').classList.add('control-checked');
+    document.getElementById('1').classList.remove('control-checked');
+    document.getElementById('3').classList.remove('control-checked');
+    document.getElementById('4').classList.remove('control-checked');
+    document.getElementById('5').classList.remove('control-checked');
+    count++;
+    rollSlider();
+    arrowActive();
+  } else if (count == 1) {
+    document.getElementById('3').classList.add('control-checked');
+    document.getElementById('1').classList.remove('control-checked');
+    document.getElementById('2').classList.remove('control-checked');
+    document.getElementById('4').classList.remove('control-checked');
+    document.getElementById('5').classList.remove('control-checked');
+    count++;
+    rollSlider();
+    arrowActive();
+  } else if (count == 2) {
+    document.getElementById('4').classList.add('control-checked');
+    document.getElementById('1').classList.remove('control-checked');
+    document.getElementById('2').classList.remove('control-checked');
+    document.getElementById('3').classList.remove('control-checked');
+    document.getElementById('5').classList.remove('control-checked');
+    count++;
+    rollSlider();
+    arrowActive();
+  } else if (count == 3) {
+    document.getElementById('5').classList.add('control-checked');
+    document.getElementById('1').classList.remove('control-checked');
+    document.getElementById('2').classList.remove('control-checked');
+    document.getElementById('3').classList.remove('control-checked');
+    document.getElementById('4').classList.remove('control-checked');
+    count++;
+    rollSlider();
+    arrowActive();
+  }
+})
+
+document.querySelector('.arrow-left').addEventListener('click', function() { //стрелка влево
+if (count == 1) {
+    document.getElementById('1').classList.add('control-checked');
+    document.getElementById('2').classList.remove('control-checked');
+    document.getElementById('3').classList.remove('control-checked');
+    document.getElementById('4').classList.remove('control-checked');
+    document.getElementById('5').classList.remove('control-checked');
+    count--;
+    rollSlider();
+    arrowActive();
+  } else if (count == 2) {
+    document.getElementById('2').classList.add('control-checked');
+    document.getElementById('1').classList.remove('control-checked');
+    document.getElementById('3').classList.remove('control-checked');
+    document.getElementById('4').classList.remove('control-checked');
+    document.getElementById('5').classList.remove('control-checked');
+    count--;
+    rollSlider();
+    arrowActive();
+  } else if (count == 3) {
+    document.getElementById('3').classList.add('control-checked');
+    document.getElementById('1').classList.remove('control-checked');
+    document.getElementById('2').classList.remove('control-checked');
+    document.getElementById('4').classList.remove('control-checked');
+    document.getElementById('5').classList.remove('control-checked');
+    count--;
+    rollSlider();
+    arrowActive();
+  } else if (count == 4) {
+    document.getElementById('4').classList.add('control-checked');
+    document.getElementById('1').classList.remove('control-checked');
+    document.getElementById('2').classList.remove('control-checked');
+    document.getElementById('3').classList.remove('control-checked');
+    document.getElementById('5').classList.remove('control-checked');
+    count--;
+    rollSlider();
+    arrowActive();
+  }
+})

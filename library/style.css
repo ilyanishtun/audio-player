@@ -201,6 +201,12 @@ a:hover {
   padding: 0 20px;
 }
 
+.slider-row {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+
 .arrow-left,
 .arrow-right {
   display: none;
@@ -931,7 +937,7 @@ a:hover {
 @media screen and (max-width: 1439px) {
   .slider-photo {
     width: 925px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   
   .slider-item:first-child {
@@ -1065,7 +1071,7 @@ a:hover {
 
   .slider-photo {
     width: 490px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   
   .slider-item:first-child {

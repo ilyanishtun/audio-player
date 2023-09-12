@@ -370,12 +370,17 @@ a:hover {
 }
 
 .favorites-books {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   padding-top: 40px;
   padding-right: 40px;
   justify-content: space-between;
-  gap: 40px;
+  gap: 40px; */
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 1190px;
+  /* transition: all 1s ease-in-out 1s; */
 
 }
 
@@ -396,11 +401,30 @@ a:hover {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
+  transition: all 2s ease;
 }
 
-.no-book {
-  display: none;
+.book-slide1,
+.book-slide2,
+.book-slide3,
+.book-slide4 {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+  gap: 40px;
+  transition: opacity 1s ease;
 }
+
+.book-active {
+  opacity: 1;
+  transition: opacity 1s ease 1s;
+}
+
 
 .book-header {
   color: #000;
@@ -1090,6 +1114,22 @@ a:hover {
 
   .slider-click:nth-last-child(-n+2) {
     display: flex;
+  }
+
+  .book-slide1,
+  .book-slide2,
+  .book-slide3,
+  .book-slide4 {
+    justify-content: center;
+}
+
+
+ .favorites-books {
+  display: flex;
+  height: 2380px;
+ }
+  .book-active {
+    justify-content: center;
   }
 
   .desserts-cakes {

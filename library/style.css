@@ -978,6 +978,42 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 1219px) {
+
+  .book-slide1,
+  .book-slide2,
+  .book-slide3,
+  .book-slide4 {
+    justify-content: center;
+}
+
+
+  .favorites-books {
+  display: flex;
+  height: 2380px;
+  }
+  .book-active {
+    justify-content: center;
+  }
+  .favorites-pick {
+    position: sticky;
+    top: -20px;
+    background-color: #FFF;
+    z-index: 5;
+  }
+
+  .form {
+    position: sticky;
+    top: 80px;
+    bottom: -20px;
+    z-index: 5;
+    background-color: #FFF;
+  }
+
+ 
+
+}
+
 @media screen and (max-width: 1024px) {
   .header{
     height: 90px;
@@ -1114,22 +1150,6 @@ a:hover {
 
   .slider-click:nth-last-child(-n+2) {
     display: flex;
-  }
-
-  .book-slide1,
-  .book-slide2,
-  .book-slide3,
-  .book-slide4 {
-    justify-content: center;
-}
-
-
- .favorites-books {
-  display: flex;
-  height: 2380px;
- }
-  .book-active {
-    justify-content: center;
   }
 
   .desserts-cakes {

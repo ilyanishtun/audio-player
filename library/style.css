@@ -122,10 +122,77 @@ a:hover {
   align-items: center;
   z-index: 6;
   width: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+.icon-profile path {
+  transition: all 0.3s ease;
+}
+
+.icon-profile:hover path {
+  fill: #BB945F;
+  transition: all 0.3s ease;
+}
+
 
 .menu-icon {
   display: none;
+}
+
+.menu-auth {
+  position: absolute;
+  background-color: #FFF;
+  width: 80px;
+  height: 115px;
+  top: 72px;
+  right: 20px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.menu-auth._active {
+  opacity: 1;
+}
+
+.menu-auth_title {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  text-align: center;
+  padding: 5px 0;
+
+}
+
+.menu-auth_line{
+  width: 40px;
+  height: 1px;
+  background-color: #BB945F;
+  margin: 0 auto;
+}
+.menu-auth_login {
+  padding-top: 15px;
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+}
+
+.menu-auth_register {
+  padding-top: 10px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
 }
 
 .welcome-box {

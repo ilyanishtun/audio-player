@@ -96,11 +96,10 @@ document.querySelector('.login-click').addEventListener('click', function() { //
   document.querySelector(".menu-auth").classList.remove("_active");
 });
 
-document.querySelector('.card-right-button').addEventListener('click', function() {
+document.getElementById('card-singin').addEventListener('click', function() {
   document.querySelector('.modal-window').classList.toggle('_active');
   document.body.classList.toggle('_lock');
-  document.querySelector(".menu-auth").classList.remove("_active");
-})
+});
 
 document.querySelector('.register-click').addEventListener('click', function() { // обработка клика на иконку профиля
   document.querySelector('.modal-window2').classList.toggle('_active');

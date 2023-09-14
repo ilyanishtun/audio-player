@@ -1030,10 +1030,12 @@ a:hover {
 .modal-window,
 .modal-window2 {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.45);
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
 

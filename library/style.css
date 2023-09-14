@@ -84,6 +84,7 @@ a {
 .header-right {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .menu {
@@ -144,9 +145,9 @@ a:hover {
   background-color: #FFF;
   width: 80px;
   height: 115px;
-  top: 72px;
-  right: 20px;
-  transition: opacity 0.3s ease;
+  top: 50px;
+  right: 0px;
+  transition: opacity 0.4s ease;
   opacity: 0;
 }
 
@@ -1025,6 +1026,132 @@ a:hover {
   display: none;
 } */
 
+
+.modal-window,
+.modal-window2 {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.modal-window._active,
+.modal-window2._active {
+  display: flex;
+}
+
+.modal-login {
+  /* display: flex; */
+  position: absolute;
+  justify-content: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 250px;
+  height: 262px;
+  background-color: #FFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px 25px;
+}
+
+.modal-login2 {
+  position: absolute;
+  justify-content: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 250px;
+  background-color: #FFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px 25px;
+  height: 382px;
+}
+
+.modal-login-header {
+  color: #000;
+  text-align: center;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.modal-login-title {
+  color: #000;
+  text-align: left;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: 0.3px;
+}
+
+.modal-login-input {
+  width: 200px;
+  height: 20px;
+  flex-shrink: 0;
+  border: 1px solid #BB945F;
+}
+
+.btn-login {
+  margin-top: 10px;
+}
+
+.dhana {
+  color: #000;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.register-text {
+  color: #0C0C0E;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-decoration-line: underline;
+}
+
+.modal-login-footer {
+  gap: 10px;
+  display: flex;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.login-click,
+.register-click {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1439px) {
   .slider-photo {
     width: 925px;
@@ -1180,6 +1307,11 @@ a:hover {
   .icon-profile {
     /* align-self: flex-start; */
   }
+
+
+.menu-auth {
+  right: 85px;
+}
 
 
   /* .slider-item:not(:nth-child(1)) {

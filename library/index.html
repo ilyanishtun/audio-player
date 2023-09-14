@@ -38,8 +38,8 @@
           <div class="menu-auth" id="menu-auth">
             <div class="menu-auth_title"><span>Profile</span></div>
             <div class="menu-auth_line"></div>
-            <div class="menu-auth_login"><span>Log In</span></div>
-            <div class="menu-auth_register"><span>Register</span></div>
+            <div class="menu-auth_login"><span class="login-click">Log In</span></div>
+            <div class="menu-auth_register"><span class="register-click">Register</span></div>
           </div>
         </div>
       </header>
@@ -468,7 +468,7 @@
               <p class="card-right-title">Get a reader card</p>
               <p class="card-right-text">You will be able to see a reader card after logging into account or you can register a new account</p>
               <div class="card-right-buttons">
-                <button class="card-right-button"><span class="card-right-button-text">Sign Up</span></button>
+                <button id="card-singin" class="card-right-button"><span class="card-right-button-text">Sign Up</span></button>
                 <button class="card-right-button"><span class="card-right-button-text">Log In</span></button>
               </div>
             </div>
@@ -501,6 +501,43 @@
         </div>
       </div>
     </footer>
+    <div class="modal-window">
+      <div class="modal-login">
+        <div class="modal-login-header"><span>login</span></div>
+        <div>
+          <img id="close-btn1" class="close-btn" src="./assets/img/close_btn.svg" alt="close-btn">
+        </div>
+        <div class="modal-login-title"><span>E-mail or readers card</span></div>
+        <input class="modal-login-input" type="text" placeholder="E-mail or readers card" required>
+        <div class="modal-login-title"><span>Password</span></div>
+        <input class="modal-login-input" type="text" placeholder="Password" required>
+        <button class="card-right-button btn-login"><span class="card-right-button-text">Log In</span></button>
+        <div class="modal-login-footer">
+          <span class="dhana">Don’t have an account?</span><span class="register-text">Register</span>
+        </div>
+      </div>
+    </div>
+    <div class="modal-window2">
+      <div class="modal-login2">
+        <div class="modal-login-header"><span>register</span></div>
+        <div>
+          <img id="close-btn2" class="close-btn" src="./assets/img/close_btn.svg" alt="close-btn">
+        </div>
+        <div class="modal-login-title"><span>First name</span></div>
+        <input class="modal-login-input" type="text" placeholder="First name">
+        <div class="modal-login-title"><span>Last name</span></div>
+        <input class="modal-login-input" type="text" placeholder="Last name">
+        <div class="modal-login-title"><span>E-mail</span></div>
+        <input class="modal-login-input" type="email" placeholder="E-mail">
+        <div class="modal-login-title"><span>Password</span></div>
+        <input class="modal-login-input" type="text" placeholder="Password">
+        <button class="card-right-button btn-login"><span class="card-right-button-text">Sign Up</span></button>
+        <div class="modal-login-footer">
+          <span class="dhana">Don’t have an account?</span><span class="register-text">Register</span>
+        </div>
+      </div>
+    </div>
+
     <script src="./index.js"></script>
     <script src="./burger.js"></script>
     <script src="./slider.js"></script>

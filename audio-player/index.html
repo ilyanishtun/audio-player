@@ -5,11 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <title>audio-player</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2bfe0afe6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h2 style="text-align: center;">Привет, мой проверяющий!</h2> 
-  <p>Я не успел сделать задание по уважительной причине (честно)</p>
-  <p>Прошу проверить мою работу в последний день, по возможности
-  Спасибо большое!</p>
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <img src="./assets/img/dontstartnow.png" class="song-img" alt="song-img">
+      <h1>Don't Start Now</h1>
+      <p>Dua Lipa</p>
+
+      <audio controls>
+        <source src="./assets/audio/beyonce.mp3" type="audio/mp3">
+      </audio>
+      <input type="range" value="0" id="progress">
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div><i class="fa-solid fa-play"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+        
+      </div>
+    </div>
+  </div>
 </body>
 </html>

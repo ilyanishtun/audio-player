@@ -7,8 +7,8 @@
 
 .container {
   width: 100%;
-  height: 100vh;
-  background: #333;
+  height: 100vh; 
+  background: #1e1e1e; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,10 +16,12 @@
 }
 
 .music-player {
-  background-color: #ffe0e5;
+  background-color: #f9f9f9; 
   width: 400px;
   padding: 25px 35px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
 nav {
@@ -33,16 +35,18 @@ nav .circle {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background: #fff;
-  color: #f53192;
+  background: #f53192; 
+  color: #fff;
   box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
 }
 
 .song-img {
   width: 220px;
+  height: 220px; 
   border-radius: 50%;
   border: 8px solid #fff;
-  box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.2); 
+  margin: 20px auto; 
 }
 
 .music-player h1 {
@@ -65,7 +69,7 @@ nav .circle {
   border-radius: 4px;
   cursor: pointer;
   margin: 40px 0;
-
+  margin-bottom: 20px;
 }
 
 #progress::-webkit-slider-thumb {
@@ -82,19 +86,20 @@ nav .circle {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px; 
 }
 
 .controls div {
   width: 60px;
   height: 60px;
-  margin: 20px;
+  margin: 0 10px; 
   background: #fff;
   display: inline-flex;
   align-items: center;
   border-radius: 50%;
   justify-content: center;
   color: #f53192;
-  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
   cursor: pointer;
 }
 
@@ -102,4 +107,10 @@ nav .circle {
   transform: scale(1.5);
   background: #f53192;
   color: #fff;
+}
+
+.time-info {
+  margin-bottom: 20px;
+  font-size: 14px; 
+  color: #333; 
 }

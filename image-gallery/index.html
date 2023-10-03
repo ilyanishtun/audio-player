@@ -1,20 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>image-gallery</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>image gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
   <body>
-    <h1>прошу дать мне еще 1 день. Спасибо!</h1>
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Введите запрос для поиска">
-        <button onclick="searchImages()">Поиск</button>
+
+    <div class="container-fluid p-0 m-0">
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="brand">Image gallery</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>   
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="text" placeholder="Search image" id="searchKey" autofocus autocomplete="off">
+        <button type="button" id="clearBtn">X</button>
+        <button class="btn btn-outline-dark" type="button" id="searchBtn">Search</button>
+      </form>
     </div>
-    <div class="gallery-container" id="gallery"></div>
-    <script src="index.js"></script>
-</body>
-</body>
+  </div>
+</nav> 
+
+<!-- search text -->
+<div class="text-dark m-3 text-muted">
+  <h3 id="searchQuery"></h3>
+</div>
+
+
+<!-- images -->
+<div class="row ps-3 pe-3">
+  <div class="col-md-4" id="col-1"></div>
+  <div class="col-md-4" id="col-2"></div>
+  <div class="col-md-4" id="col-3"></div>
+</div>
+
+<!-- error div -->
+
+<div class="m-5 text-center" id="errorGrid">
+
+</div>
+
+<!-- modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Image</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center" id="modalBody">
+            </div>
+            <div class="modal-footer">
+              <a type="button" href="" target="_blank" class="btn btn-success" id="imageViewLink">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="logo">
+              <div><span>2023</span></div>
+              <div><a href="https://github.com/ilyanishtun" target="_blank"><img class="icon" src="./assets/github.svg" alt="github">ilyanishtun</a></div>
+              <div><a href="https://rs.school/js/" target="_blank"><img class="logo-img" alt="logo-rsschool" src="./assets/rs_school.svg"></a></div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>

@@ -24,9 +24,9 @@ snake[0] = {
 
 document.addEventListener('keydown', direction);
 
-// function direction() {
-//   if(event.keyCode == 37)
-// }
+function direction() {
+  if(event.keyCode == 37)
+}
 
 
 function drawGame() {

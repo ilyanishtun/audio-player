@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>random-game</title>
-</head>
-<body>
-
-  <h3>Привет , мой проверяющий! прошу дать мне еще немного времени!
-    Спасибо!
-  </h3>
-  
-  <canvas id="game" width="608px" height="608px"></canvas>
-  <script src="./index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="high-score"></div>
+    <div id="score"></div>
+    <div id="control-keys">
+      <div id="control-head">Controls</div>
+      <div>Left 👉 A or ⬅️</div>
+      <div>Right 👉 D or ➡️</div>
+      <div>Up 👉 W or ⬆️</div>
+      <div>Down 👉 S or ⬇️</div>
+    </div>
+    <div id="controls">
+        <button id="show-grid">SHOW GRID</button>
+        <button id="pause" class="pause-active">PAUSE</button>
+        <button id="reset">RESET</button>
+    </div>
+    <div id="play">Press control keys to start<span style="font-size: 3em;">⌨️</span></div>
+  </body>
 </html>
